@@ -1,7 +1,6 @@
 local cloneref = cloneref or function(o) return o end
 COREGUI = cloneref(game:GetService("CoreGui"))
 UIS = cloneref(game:GetService("UserInputService"))
-
 if COREGUI:FindFirstChild("Internal") then
 	COREGUI.Internal:Destroy()
 end
@@ -77,7 +76,7 @@ Title.BorderSizePixel = 0
 Title.Position = UDim2.new(0.0621118024, 0, 0, 0)
 Title.Size = UDim2.new(0, 453, 0, 23)
 Title.Font = Enum.Font.SourceSansBold
-Title.Text = "Celery Internal"
+Title.Text = "Velocity Internal"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 17.000
 Title.TextWrapped = true
@@ -340,4 +339,4 @@ minimizehandle(ScriptHub, Main_2, Minimize_2)
 getgenv().addscript = addscript
 
 -- Load scripts from github
-loadstring(game:HttpGet("https://raw.githubusercontent.com/jake1325/scripts/main/CeleryInternalScripts.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jake1325/VelocityInternal/refs/heads/main/scripts.lua"))()
